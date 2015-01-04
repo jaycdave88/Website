@@ -1,46 +1,12 @@
-<div class= "load_panel">
- <div id="loader">
-   <img src="<%= asset_path( 'spiffy.gif' ) %>">
-   <div id="particles-js"></div>
- </div>
-</div>
+<%= render 'layouts/load'  %>
 
-<div class="big_head">
-    <span>
-      Jay C Davé
-    </span>
-  <div class="contain-to-grid sticky">
-    <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
-      <ul>
-        <center>
-          <a href="#about_me">About Me</a>
-          &nbsp;|&nbsp;
-          <a href="#contact_me">Contact Me</a>
-        </center>
-      </ul>
-    </nav>
-  </div>
-</div>
+<%= render 'layouts/bighead'  %>
 
-<center>
-  <a href="<%=asset_path( 'resume.pdf' )  %>" class="button">DOWNLOAD RESUME</a>
-</center>
+<%= render 'layouts/aboutme'  %>
 
-<p class="rotate">Full-Stack Developer, QA Tester, Guide for Newer Developers</p>
+<%= render 'layouts/foundation' %>
 
-<img src="<%=asset_path( 'profilePic.jpg' )  %>">
-</div>
+<%= render 'layouts/timeline'  %>
 
-<div id="carousel">
-  <%= render 'layouts/foundation' %>
-</div>
+<%= render 'layouts/footer'  %>
 
-<footer>
-  <span>
-    &#169;Jay C Dav&egrave;
-    <br>
-    <div id="thanks">
-      Thanks for stopping by!!
-    </div>
-  </span>
-</footer>

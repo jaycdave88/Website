@@ -11,10 +11,12 @@
 </head>
 
 <body>
-
   <%= yield %>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="http://vincentgarreau.com/particles.js/particles.js"></script>
+  <script src="modernizr.js"></script>
   <%= javascript_include_tag "application" %>
+  <a href="#" class="scrollToTop"></a>
 </body>
 </html>
 
