@@ -1,10 +1,9 @@
-$(window).load(function() {
-	$(".load_panel").delay(7000).fadeOut(500);
-
-	$(".rotate").textrotator({
-	  animation: "dissolve",
-	  separator: ",",
-	});
-
+$(".rotate").textrotator({
+	animation: "dissolve",
+	separator: ",",
 });
 
+window.addEventListener("load",function(){
+	var load_screen = document.getElementById('load_screen');
+	document.body.removeChild(load_screen)
+});
