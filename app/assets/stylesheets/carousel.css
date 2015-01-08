@@ -2,7 +2,16 @@
   margin: 3px;
 }
 #owl-demo .item img{
+<<<<<<< HEAD
+position: relative;
+  display: block;
+
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+=======
   display: block;
   width: 100%;
   height: auto;
+>>>>>>> c6ad969b24bc100bd42b7b4722191d93bce4ed0a
 }
