@@ -6,14 +6,14 @@
   <title><%= content_for?(:title) ? yield(:title) : "Jay C Davé" %></title>
 
   <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "/smoothScroll.js"  %>
-  <%= csrf_meta_tags %>
 </head>
 
 <body>
   <%= yield %>
+  <%= csrf_meta_tags %>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "/smoothScroll.js"  %>
   <a href="#" class="scrollToTop"></a>
 
 </body>
