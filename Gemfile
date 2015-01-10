@@ -11,7 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc','~> 0.4.0'
 gem 'spring'
 gem 'mail_form'
-gem 'ruby' '2.0.0'
+gem 'ruby'
 #-------------css---------------
 gem 'foundation-rails', '5.4.3.1'
 #-------------asset_pipeline---------------
