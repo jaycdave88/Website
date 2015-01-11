@@ -123,7 +123,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (= 1.7.11)
+  bundler (= 1.6.1)
   coffee-rails
   foundation-rails (= 5.4.3.1)
   jbuilder (~> 2.0)

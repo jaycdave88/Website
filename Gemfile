@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'bundler', '1.7.11'
+gem 'bundler', '1.6.1'
 gem 'rails', '4.1.5'
 gem 'pg'
 gem 'sass-rails', '~> 4.0.3'
