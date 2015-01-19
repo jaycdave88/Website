@@ -7,6 +7,16 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
+
+ resources :contact, except: [:new, :create, :edit, :update, :destroy, :show]
+
+  namespace :api do
+  namespace :v1 do
+    resources :contact
+  end
+end
+
+
   # Example of regular route:
   
    

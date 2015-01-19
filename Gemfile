@@ -12,6 +12,7 @@ gem 'sdoc','~> 0.4.0'
 gem 'spring'
 gem 'mail_form'
 gem 'ruby'
+
 #-------------css---------------
 gem 'foundation-rails', '5.4.3.1'
 #-------------asset_pipeline---------------
