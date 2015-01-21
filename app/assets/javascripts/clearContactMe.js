@@ -1,10 +1,23 @@
 var testing = $(".submit_contactMe");
 testing.click(function(){
-var contactMeForm = $("#contactForm");
-contactForm.post('/api/v1/contact');
-// 	$("#name").val('');
-// 	$("#email").val('');
-// 	$("#subject").val('');
-// 	$("#message").val('');
+	// if() execute code here to find the names of the field are not empty
+	if ($("#name").val()=='' || $("#email").val()=='' || $("#subject").val()=='' || $("#message").val()=='') {
+		return;
+	};
+	var contactForm = $("#contactForm");
+	$.ajax({
+		url: contactForm.attr("action"),
+		type: "POST",
+		data: contactForm.serializeArray(),
+		success:function(result, status){
+			$("#name").val('');
+			$("#email").val('');
+			$("#subject").val('');
+			$("#message").val('');
+			
+		}
+	})
 });
+
+
 
