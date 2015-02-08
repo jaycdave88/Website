@@ -1,0 +1,19 @@
+  .scrollToTop{
+    width:41px; 
+    height:61px;
+    padding:10px; 
+    text-align:center; 
+    background: whiteSmoke;
+    font-weight: bold;
+    color: #444;
+    text-decoration: none;
+    position:fixed;
+    top:480px;
+    right:40px;
+    display:none;
+    background: url("http://www.buddychinaforum.com/images/scroll-top-arrow.png") no-repeat 0px 20px;
+    z-index: 1;
+  }
+  .scrollToTop:hover{
+    text-decoration:none;
+  }
