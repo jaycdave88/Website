@@ -4,7 +4,6 @@
   margin-top: 2em;
   margin-bottom: 2em;
 }
-
 #cd-timeline::before {
   /* this is the vertical line */
   content: '';
@@ -16,7 +15,6 @@
   background: #d7e4ed;
 }
 @media only screen and (min-width: 1170px) {
-
   #cd-timeline {
     margin-top: 3em;
     margin-bottom: 3em;
