@@ -15,7 +15,6 @@
   text-decoration: none;
   width: 60px;
 }
-
 #expander:hover {
   background: #e0e0e0;
   background-image: -webkit-linear-gradient(top, #e0e0e0, #d6d6d6);
