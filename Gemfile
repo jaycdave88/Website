@@ -12,6 +12,8 @@ gem 'sdoc','~> 0.4.0'
 gem 'spring'
 gem 'mail_form'
 gem 'ruby'
+gem 'toastr-rails'
+
 
 #-------------css---------------
 gem 'foundation-rails', '5.4.3.1'

@@ -1,1 +1,11 @@
+
+
 $("#flash_message").html("<%= @flash['message'] %>")
+
+<% if @flash['success'] %>
+toastr["error"]("Something went wrong! Please try again! ")
+<% else %>
+toastr["success"]("Thank you!! I will get back to you ASAP :D")
+<% end %>
+
+
