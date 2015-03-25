@@ -15,6 +15,7 @@ gem 'ruby'
 gem 'toastr-rails'
 
 
+
 #-------------css---------------
 gem 'foundation-rails', '5.4.3.1'
 #-------------asset_pipeline---------------
