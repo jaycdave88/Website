@@ -7,7 +7,7 @@ $(window).scroll(function(){
 	});
 
 	//Click event to scroll to top
-	$("#top-btn").click(function(){
+	$("#top").click(function(){
 		$('html, body').stop().animate({scrollTop : 0},500);
 		return false;
 	});

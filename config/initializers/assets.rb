@@ -4,7 +4,6 @@
 Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( loadScreen.js )
 Rails.application.config.assets.precompile += %w( stylez.css )
-Rails.application.config.assets.precompile += %w( up.png )
 
 
 
