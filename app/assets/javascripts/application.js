@@ -12,9 +12,9 @@
 //
 
 //= require jquery
-//= require toastr
-//= require jquery_ujs
 //= require foundation
+//= require jquery_ujs
+//= require toastr
 //= require_tree .
 
 
