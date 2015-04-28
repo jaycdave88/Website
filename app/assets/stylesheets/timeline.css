@@ -1,4 +1,6 @@
-
+.cd-date{
+  margin-top: 30px;
+}
 
 #cd-timeline {
   position: relative;
@@ -191,7 +193,7 @@ cd-bounce-1 {  0% {
 
 .cd-timeline-content .cd-read-more {
   float: right;
-  padding: .8em 1em;
+  padding: .8em 0em;
   background: #acb7c0;
   color: white;
   border-radius: 0.25em;
@@ -201,7 +203,7 @@ cd-bounce-1 {  0% {
 
 .cd-timeline-content .cd-date {
   float: left;
-  padding: .8em 0;
+  padding: .8em 1;
   opacity: .7;
 }
 
@@ -274,7 +276,6 @@ cd-bounce-1 {  0% {
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
     left: auto;
     right: 122%;
-    text-align: right;
   }
 
   .cssanimations .cd-timeline-content.is-hidden { visibility: hidden; }
