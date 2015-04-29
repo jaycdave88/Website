@@ -1,6 +1,32 @@
+<div id="sidebar">
+		<div id="logo">
+			<%= link_to root_path do  %>
+			<%= image_tag "logo.png" %>
+			<% end  %>
+		</div>
+
+		<ul>
+			<li class="category">Website</li>
+			<li><%= link_to "Blog", '/post'  %></li>
+			<li>About</li>
+		</ul>
+
+		<ul>
+			<li class="category">Social</li>
+			<li><a href="http://www.twitter.com">Twitter</a></li>
+			<li><a href="http://www.google.com">Google</a></li>
+			<li><a href="http://www.ebay.com">Ebay</a></li>
+			<li><a href="http://www.yahoo.com">Yahoo</a></li>
+		</ul>
+	</div> 
+
+
+
+
 <% @posts.each do |post|  %>
 	<div class="post_wrapper">
 		<h2 class="title"><%= link_to post.title, post %></h2>
 		<p class="date"><%= post.created_at.strftime("%B, %d, %Y")  %></p>
 	</div>
 <% end  %>
+

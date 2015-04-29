@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title><%= content_for?(:title) ? yield(:title) : "Jay C Davé" %></title>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title><%= content_for?(:title) ? yield(:title) : "Jay C Davé" %></title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
-  <%= yield %>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  
 
-  <a href="#top" class="scrollToTop"></a>
+<%= yield %>
+<%= stylesheet_link_tag    "application" %>
+<%= javascript_include_tag "application" %>
+
+
+<a href="#top" class="scrollToTop"></a>
 
 </body>
 </html>
