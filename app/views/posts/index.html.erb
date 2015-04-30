@@ -1,42 +1,5 @@
-<div class="row">
-	<div class="col-md-4">
-	</div>
-</div>
 
-		<div id="sidebar">
-			<div id="logo">
-				<%= link_to root_path do  %>
-				<%= image_tag "logo.png" %>
-				<% end  %>
-			</div>
-
-			<ul>
-				<li class="category">Website</li>
-				<li><%= link_to "Blog", '/post'  %></li>
-				<li>About</li>
-			</ul>
-
-			<ul>
-				<li class="category">Social</li>
-				<li><a href="http://www.twitter.com">Twitter</a></li>
-				<li><a href="http://www.google.com">Google</a></li>
-				<li><a href="http://www.ebay.com">Ebay</a></li>
-				<li><a href="http://www.yahoo.com">Yahoo</a></li>
-			</ul>
-			<p class="sign_in">Admin Login</p>
-		</div> 
-
-
-
-<div id="main_content">
-	<div id="header">
-		<p>All Posts</p>
-		<div class="buttons">
-			<button class="button"><%= link_to "New Post", new_post_path  %></button>
-			<button class="button">Log Out</button>
-		</div>
-	</div>
-
+<%= render 'sidebar'  %>
 	<% @posts.each do |post|  %>
 	<div class="post_wrapper">
 		<h2 class="title"><%= link_to post.title, post %></h2>

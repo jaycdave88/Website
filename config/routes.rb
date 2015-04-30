@@ -1,17 +1,23 @@
 Rails.application.routes.draw do
 
 
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+devise_for :users
 
-  # You can have the root of your site routed with "root"
-  root 'welcome#index'
+authenticated :user do
+  root to: "posts#index", as: :authenticated_root
+end
 
-  resources :posts
+unauthenticated do
+  root to: "welcome#index"
+end
+
+
+  resources :posts do
+    resources :comments
+  end
+
+  get '/about', to: 'pages#about'
   
-
-
-
   resources :contact, except: [:new, :create, :edit, :update, :destroy, :show]
 
   namespace :api do
