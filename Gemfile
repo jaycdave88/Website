@@ -13,6 +13,7 @@ gem 'spring'
 gem 'mail_form'
 gem 'ruby'
 gem 'toastr-rails'
+gem 'devise'
 
 
 
