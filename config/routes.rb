@@ -11,7 +11,6 @@ unauthenticated do
   root to: "welcome#index"
 end
 
-
   resources :posts do
     resources :comments
   end
