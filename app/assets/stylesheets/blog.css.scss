@@ -1,5 +1,4 @@
 .page {
-  position: fixed;
   height: 100%;
   background-color: #1E2629;
 }
@@ -66,7 +65,7 @@
 .menu_items {
   position: absolute;
   bottom: 0;
-  left: 50px;
+  left: 14px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -82,10 +81,13 @@
           transition: transform 0.7s 0s cubic-bezier(1, 0.005, 0.24, 1);
 }
 .menu_items li:nth-child(2) {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .menu_items li:nth-child(3) {
-  margin-left: 40px;
+  margin-left: 20px;
+
+}.menu_items li:nth-child(4) {
+  margin-left: 20px;
 }
 .menu_items a {
   
@@ -126,10 +128,9 @@
 
 /* Let's open up the menu */
 .shazam {
-  .content_inner {
+  /*.content_inner {
     height: 100%;
-  }
-
+  }*/
 }
 .shazam .content {
   -webkit-transform: rotate(-30deg);
@@ -179,3 +180,10 @@
 			}
 		}
 	}
+  .sign_in{
+    font-size: 12px;
+  }
+  .all_posts{
+    overflow-y: auto;
+    height: 200px;
+  }

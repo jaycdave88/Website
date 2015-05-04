@@ -2,14 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-
-.all_posts{
-overflow-y: auto;
-height: 200px;
-}
-
-
+// iphone 5 & 5s
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
 	.menu_items li {
 	  height: 20px;
