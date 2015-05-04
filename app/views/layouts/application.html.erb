@@ -5,17 +5,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title><%= content_for?(:title) ? yield(:title) : "Jay C Davé" %></title>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+	<%= stylesheet_link_tag "application" %>
 </head>
 
 <body>
 
-<%= yield %>
-<%= stylesheet_link_tag    "application" %>
-<%= javascript_include_tag "application" %>
+	<%= yield %>
+	<a href="#top" id="top" class="scrollToTop"></a>
+	<%= javascript_include_tag "application" %>
 
-
-<a href="#top" class="scrollToTop"></a>
+	
 
 </body>
 </html>

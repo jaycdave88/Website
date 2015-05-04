@@ -1,14 +1,14 @@
 <div class="page">
 	<span class="menu_toggle">
-		<i class="menu_open glyphicon glyphicon-align-justify"></i>
-		<i class="menu_close glyphicon glyphicon-remove-sign"></i>
+		<i class="menu_open fa fa-align-justify fa-lg"></i>
+		<i class="menu_close fa fa-times fa-lg"></i>
 	</span>
 	<!-- open and close -->
 
 	<ul class="menu_items">
-		<li><a href="/"><i class="glyphicon glyphicon-home"></i> Home</a></li>
-		<li><a href="/blogs"><i class="glyphicon glyphicon-book"></i> Blog</a></li>
-		<li><a href="/about"><i class="glyphicon glyphicon-info-sign "></i> About</a></li>
+		<li><a href="/"><i class="fa fa-home "></i> Home</a></li>
+		<li><a href="/blogs"><i class="fa fa-book "></i> Blog</a></li>
+		<li><a href="/about"><i class="fa fa-info "></i> About</a></li>
 
 		<% if !user_signed_in? %>
 		<li><p class="sign_in"><%= link_to "Admin Login",new_user_session_path %></p></li>
