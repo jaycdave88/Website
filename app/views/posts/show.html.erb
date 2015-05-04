@@ -1,32 +1,61 @@
-<%= render 'sidebar' %>
+<div class="page">
+	<span class="menu_toggle">
+		<i class="menu_open fi-align-justify"></i>
+		<i class="menu_close fi-x"></i>
+	</span>
+	<!-- open and close -->
 
-<div id="post_conent">
-
-	<h1 class="title">
-		<%= @post.title  %>
-	</h1>
-
-	<p class="date">
-		Submitted <%= time_ago_in_words(@post.created_at) %> Ago
-		<% if user_signed_in? %>
-			| <%= link_to "Edit", edit_post_path(@post) %>
-			| <%= link_to "Delete", post_path(@post), method: :delete, data: {confirm: 'Are you sure?'}  %>
+	<ul class="menu_items">
+		<li><a href="/"><i class="fi-home"></i> Home</a></li>
+		<li><a href="https://twitter.com/J_cd88">Twitter</a></li>
+		<li><a href="https://www.linkedin.com/in/jaycdave">LinkedIn</a></li>
+		<li><a href="https://github.com/jaycdave88">Github</a></li>
+		<li><a href="/blogs"><i class="fi-book"></i> Blog</a></li>
+		<li><a href="/about"><i class="fi-info"></i> About</a></li>
+		<!-- <li><i class="icon fa fa-signal fa-2x"></i> About</a></li> -->
+		<% if !user_signed_in? %>
+		<p class="sign_in"><%= link_to "Admin Login",new_user_session_path %></p>
 		<% end %>
-	</p>
+		<br>
 
-	<p class="body">
-		<%= @post.body  %>
-	</p>
+	</ul>
+	<main class="content">
+		<div class="content_inner">
 
-	<div id="comments">
-		<h2><%= @post.comments.count  %> Comments</h2>
-		<%= render @post.comments  %>
-		<h3>Add a comment:</h3>
-		<%= render "comments/form"  %>
-	</div>
+			<% if current_page?(posts_path)  %>
+			<p>All Posts</p>
+			<% elsif current_page?(about_path) %>
+			<p>About</p>
+			<% else  %>
+			<%= link_to "Back to All Posts", posts_path  %>
+			<% end %>
+
+			<div id="post_conent">
+
+				<h1 class="title">
+					<%= @post.title  %>
+				</h1>
+
+				<p class="date">
+					Submitted <%= time_ago_in_words(@post.created_at) %> Ago
+					<% if user_signed_in? %>
+					| <%= link_to "Edit", edit_post_path(@post) %>
+					| <%= link_to "Delete", post_path(@post), method: :delete, data: {confirm: 'Are you sure?'}  %>
+					<% end %>
+				</p>
+
+				<p class="body">
+					<%= @post.body  %>
+				</p>
+
+				<div id="comments">
+					<h2><%= @post.comments.count  %> Comments</h2>
+					<%= render @post.comments  %>
+					<h3>Add a comment:</h3>
+					<%= render "comments/form"  %>
+				</div>
+			</div>
+
+		</div>
+	</main>
 </div>
-
-
-
-
-

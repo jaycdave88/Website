@@ -1,16 +1,47 @@
-<%= render 'posts/sidebar'  %>
+<div class="page">
+	<span class="menu_toggle">
+		<i class="menu_open fi-align-justify"></i>
+		<i class="menu_close fi-x"></i>
+	</span>
+	<!-- open and close -->
 
-<div id="page_wrapper">
-	<div id="profile_image">
-		<%= image_tag "profile.png" %>
-	</div>
+	<ul class="menu_items">
+		<li><a href="/"><i class="fi-home"></i> Home</a></li>
+		<li><a href="https://twitter.com/J_cd88">Twitter</a></li>
+		<li><a href="https://www.linkedin.com/in/jaycdave">LinkedIn</a></li>
+		<li><a href="https://github.com/jaycdave88">Github</a></li>
+		<li><a href="/blogs"><i class="fi-book"></i> Blog</a></li>
+		<li><a href="/about"><i class="fi-info"></i> About</a></li>
+		<!-- <li><i class="icon fa fa-signal fa-2x"></i> About</a></li> -->
+		<% if !user_signed_in? %>
+		<p class="sign_in"><%= link_to "Admin Login",new_user_session_path %></p>
+		<% end %>
+		<br>
 
-	<div id="content">
-		<h1>Hi Everyone! </h1>
-		<p>Welcome to my blog posts of technologies and things I just find interesting.</p>
-		<p>Feel free to follow me on social media!</p>
-		<p>© Jay C. Davé</p>
-	</div>
+	</ul>
+	<!-- side links -->
+	<main class="content">
+		<div class="content_inner">
+			<%= link_to "Back to All Posts", posts_path  %>
+			<div id="page_wrapper">
+				<div id="profile_image">
+					<%= image_tag "profile.png" %>
+				</div>
+
+				<div id="content">
+					<h1>Hi Everyone! </h1>
+					<p>Welcome to my blog posts of technologies and things I just find interesting.</p>
+					<p>Feel free to follow me on social media!</p>
+					<p>© Jay C. Davé</p>
+				</div>
+			</div>
+		</div>
+	</main>
 </div>
+
+
+
+
+
 
 
