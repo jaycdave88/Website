@@ -1,18 +1,54 @@
+<div class="page">
+	<span class="menu_toggle">
+		<i class="menu_open fi-align-justify"></i>
+		<i class="menu_close fi-x"></i>
+	</span>
+	<!-- open and close -->
 
-<%= render 'sidebar'  %>
-<%= render 'navMenu'  %>
+	<ul class="menu_items">
+		<li><a href="/"><i class="fi-home"></i> Home</a></li>
+		<li><a href="https://twitter.com/J_cd88">Twitter</a></li>
+		<li><a href="https://www.linkedin.com/in/jaycdave"><i class="fi-twitter"></i>LinkedIn</a></li>
+		<li><a href="https://github.com/jaycdave88">Github</a></li>
+		<li><a href="/blogs"><i class="fi-book"></i> Blog</a></li>
+		<li><a href="/about"><i class="fi-info "></i> About</a></li>
+		<i class="general foundicon-home"></i>
+		<!-- <li><i class="icon fa fa-signal fa-2x"></i> About</a></li> -->
+		<% if !user_signed_in? %>
+		<p class="sign_in"><%= link_to "Admin Login",new_user_session_path %></p>
+		<% end %>
+		<br>
 
+	</ul>
+	<!-- side links -->
+	<main class="content">
+		<div class="content_inner">
 
-	<% @posts.each do |post|  %>
-	<div class="post_wrapper">
-		<h2 class="title"><%= link_to post.title, post %></h2>
-		<p class="date"><%= post.created_at.strftime("%B, %d, %Y")  %></p>
-	</div> 
-	<% end  %>
+			<div id="main_content">
+				<div id="header">
+					<% if current_page?(posts_path)  %>
+					<p>All Posts</p>
+					<% elsif current_page?(about_path) %>
+					<p>About</p>
+					<% else  %>
+					<%= link_to "Back to All Posts", posts_path  %>
+					<% end %>
 
+					<% if user_signed_in?  %>
+					<div class="buttons">
+						<button class="button tiny success"><%= link_to "New Post", new_post_path  %></button>
+						<button class="button tiny alert"><%= link_to 'Sign out', destroy_user_session_path(:authenticity_token => form_authenticity_token()), method: 'delete' %></button>
+					</div>
+					<% end %>
+				</div>
 
+				<% @posts.each do |post|  %>
+				<div class="post_wrapper">
+					<h2 class="title"><%= link_to post.title, post %></h2>
+					<p class="date"><%= post.created_at.strftime("%B, %d, %Y")  %></p>
+				</div> 
+				<% end  %>
 
-
-
-
-
+			</div>
+		</main>
+	</div>

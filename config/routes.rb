@@ -11,7 +11,7 @@ unauthenticated do
   root to: "welcome#index"
 end
 
-  resources :posts do
+  resources :posts, :path => 'blogs'do
     resources :comments
   end
 

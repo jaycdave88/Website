@@ -14,7 +14,7 @@ gem 'mail_form'
 gem 'ruby'
 gem 'toastr-rails'
 gem 'devise'
-
+gem 'foundation-icons-sass-rails'
 
 
 #-------------css---------------
