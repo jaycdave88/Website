@@ -11,9 +11,8 @@
 		<li><a href="/about"><i class="glyphicon glyphicon-info-sign "></i> About</a></li>
 
 		<% if !user_signed_in? %>
-		<p class="sign_in"><%= link_to "Admin Login",new_user_session_path %></p>
+		<li><p class="sign_in"><%= link_to "Admin Login",new_user_session_path %></p></li>
 		<% end %>
-		<br>
 
 	</ul>
 	<!-- side links -->
@@ -38,12 +37,14 @@
 					<% end %>
 				</div>
 
-				<% @posts.each do |post|  %>
-				<div class="post_wrapper">
-					<h2 class="title"><%= link_to post.title, post %></h2>
-					<p class="date"><%= post.created_at.strftime("%B, %d, %Y")  %></p>
-				</div> 
-				<% end  %>
+				<div class="all_posts">
+					<% @posts.each do |post|  %>
+					<div class="post_wrapper">
+						<h2 class="title"><%= link_to post.title, post %></h2>
+						<p class="date"><%= post.created_at.strftime("%B, %d, %Y")  %></p>
+					</div> 
+					<% end  %>
+				</div>
 
 			</div>
 		</main>

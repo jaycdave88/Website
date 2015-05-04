@@ -1,4 +1,5 @@
 .page {
+  position: fixed;
   height: 100%;
   background-color: #1E2629;
 }
@@ -125,9 +126,10 @@
 
 /* Let's open up the menu */
 .shazam {
-  /*.content_inner {
+  .content_inner {
     height: 100%;
-  }*/
+  }
+
 }
 .shazam .content {
   -webkit-transform: rotate(-30deg);
