@@ -19,5 +19,3 @@
 
 
 $(document).foundation();
-
-

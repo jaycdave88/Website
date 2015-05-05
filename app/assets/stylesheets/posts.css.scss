@@ -7,5 +7,32 @@
 	.menu_items li {
 	  height: 20px;
 	  margin-bottom: 30px;
+
 	}
+
+}
+
+.blog_footer{
+  background-color:#1E2629;
+  width:100%;
+  padding: 4px;
+  border-top: 1px solid white;
+  overflow-y: hidden;
+  position: absolute;
+  bottom: 0;
+  opacity: .9;
+
+}
+
+.blog_footer > p{
+  color:white;
+} 
+
+.white{
+  color:white;
+}
+
+
+.social_footer>a{
+  padding: 10px;
 }

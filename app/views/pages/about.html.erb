@@ -7,33 +7,36 @@
 
 	<ul class="menu_items">
 		<li><a href="/"><i class="fa fa-home "></i> Home</a></li>
-		<li><a href="/blogs"><i class="fa fa-book "></i> Blog</a></li>
+		<li><a href="/posts"><i class="fa fa-book "></i> Blog</a></li>
 		<li><a href="/about"><i class="fa fa-info "></i> About</a></li>
 		<% if !user_signed_in? %>
 		<li><p class="sign_in"><%= link_to "Admin Login",new_user_session_path %></p></li>
 		<% end %>
+		<br>
+		<br>
 		<br>
 
 	</ul>
 	<!-- side links -->
 	<main class="content">
 		<div class="content_inner">
-			<%= link_to "Back to All Posts", posts_path  %>
+			<%= link_to "Back to All Posts", posts_path, :class => "button disabled tiny radius "  %>
 			<div id="page_wrapper">
 				<div id="profile_image">
 					<%= image_tag "profile.png" %>
 				</div>
 
 				<div id="content">
-					<h1>Hi Everyone! </h1>
+					<h2>Hi Everyone! </h2>
 					<p>Welcome to my blog posts of technologies and things I just find interesting.</p>
-					<p>Feel free to follow me on social media!</p>
-					<p>© Jay C. Davé</p>
+					<br>
+					<b><p>Feel free to follow me on social media!</p></b>
 				</div>
 			</div>
 		</div>
 	</main>
 </div>
+<%= render 'posts/footer' %>
 
 
 

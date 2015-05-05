@@ -7,13 +7,14 @@
 
 	<ul class="menu_items">
 		<li><a href="/"><i class="fa fa-home "></i> Home</a></li>
-		<li><a href="/blogs"><i class="fa fa-book "></i> Blog</a></li>
+		<li><a href="/posts"><i class="fa fa-book "></i> Blog</a></li>
 		<li><a href="/about"><i class="fa fa-info "></i> About</a></li>
-
 		<% if !user_signed_in? %>
 		<li><p class="sign_in"><%= link_to "Admin Login",new_user_session_path %></p></li>
 		<% end %>
-
+		<br>
+		<br>
+		<br>
 	</ul>
 	<!-- side links -->
 	<main class="content">
@@ -49,3 +50,9 @@
 			</div>
 		</main>
 	</div>
+</div>
+<%= render 'footer' %>
+
+
+
+
