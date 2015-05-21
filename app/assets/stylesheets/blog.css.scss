@@ -1,5 +1,8 @@
+// *{
+//   border: solid 1px red
+// }
 .page {
-  overflow-y: hidden;
+  // overflow-y: hidden;
   background-color: #1E2629;
   height:100%;
 }
@@ -185,6 +188,8 @@
     font-size: 12px;
   }
   .all_posts{
+    float: right;
+    // background-color: grey;
     overflow-y: auto;
-    height: 200px;
+    height: 400px;
   }
