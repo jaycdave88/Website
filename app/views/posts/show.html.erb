@@ -111,12 +111,14 @@
                                 <div class="entry-content">
                                     <blockquote>
                                     	<%= @post.body  %>
+                                        <br>
+                                            <%= image_tag @post.photo.url(:medium) %>
                                     	<div id="comments">
-          															<b><h7><%= @post.comments.count  %> Comments</h7></b>
-          															<%= render @post.comments  %>
-          															<h3>Add a comment:</h3>
-          															<%= render "comments/form"  %>
-        															</div>
+										<b><h7><%= @post.comments.count  %> Comments</h7></b>
+										<%= render @post.comments  %>
+										<h3>Add a comment:</h3>
+										<%= render "comments/form"  %>
+									</div>
                                     </blockquote>
                                 </div>
                                 <!-- .entry-content -->
