@@ -1,58 +1,181 @@
-<div class="page">
-	<span class="menu_toggle">
-		<i class="menu_open fa fa-align-justify fa-lg"></i>
-		<i class="menu_close fa fa-times fa-lg"></i>
-	</span>
-	<!-- open and close -->
 
-	<ul class="menu_items">
-		<li><a href="/"><i class="fa fa-home "></i> Home</a></li>
-		<li><a href="/posts"><i class="fa fa-book "></i> Blog</a></li>
-		<li><a href="/about"><i class="fa fa-info "></i> About</a></li>
-		<% if !user_signed_in? %>
-		<li><p class="sign_in"><%= link_to "Admin Login",new_user_session_path %></p></li>
-		<% end %>
-		<br>
-		<br>
-		<br>
-	</ul>
-	<!-- side links -->
-	<main class="content">
-		<div class="content_inner">
+<link rel='stylesheet' id='all-css-0' href='https://s0.wp.com/_static/??-eJx9jksOgzAMRC/U1I0oy6pngWBSg/MRdhRxe6ouiioqdjPSe5qBmo1LUTEqhGIyF09RQAIxrnlJEzr9bVcncoH/GtOMAhNq7txsPu2A95z8LiTvcUhFzZiYU4VKg8fTDYojRdL1Gw6wvjC8b+TSg7ilqwyiK+Mp1ykyk+KOPsPD3htrm/Zm22kDA6FvnA==' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-2' href='https://s2.wp.com/_static/??-eJx9kNEOwiAMRX9I7MzM9MX4Lcgq66SUAMt+X+YyjYny0pzSe5JSmIMy4jP6DDyp4CZLPoFFj5HK4A/uTUo7+O2mQWI20mOCkoLkqOAgs3oParaRiOWdg85LgrEnjQ65xGoah26zFhy0eVSXRJaR1rrGCLzk9Zsb1HyLopwYnUn8V6PuTlOsqRFvTmxB+7rPp12kK18Ox7Y5de25bcYn2kybUA==' type='text/css' media='all' />
 
-			<div id="main_content">
+
+<!-- sidebar social -->
+<div class="sidebar-nav">
+	<button class="menu-toggle x" title="Menu">
+		<span class="lines"></span>
+	</button>
+	<div class="social-links">
+		<ul id="menu-social-links" class="menu">
+
+			<li id="menu-item-151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-151"><a href="https://www.facebook.com/Gsxr600soup"><span class="screen-reader-text">Facebook</span></a></li>
+
+			<li id="menu-item-152" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152"><a href="https://twitter.com/J_cd88"><span class="screen-reader-text">Twitter</span></a></li>
+
+			<li id="menu-item-153" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-154"><a href="https://github.com/jaycdave88"><span class="screen-reader-text">Github</span></a></li>
+		</ul>
+	</div>	
+</div>
+<!-- ending sidebar social -->
+
+<!-- Main sidebar -->
+<div class="slide-menu">
+	<a href="http://www.jaycdave.com/"><img src="http://www.gravatar.com/avatar/d40369c0e5a2cf3363db686228504827.jpg" class="avatar site-logo"></a>	
+	<h1 class="site-title">
+		<a href="http://www.jaycdave.com/posts" rel="home">Jay's Blog</a>
+	</h1>
+
+	<nav id="site-navigation" class="main-navigation" role="navigation">
+		<div class="menu-primary-container">
+			<ul id="menu-primary" class="menu">
+
+			<li id="menu-item-141" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-142"><a href="/"><i class="fa fa-home"></i> Home</a></li>
+
+			<li id="menu-item-143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-143"><a href="/posts"><i class="fa fa-book"></i> Blog</a></li>
+
+			<li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144">
+				<a href="/about"><i class="fa fa-info"></i> About</a></li>
+
+			<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-145">
+				<% if !user_signed_in? %>
+					<p class="sign_in"><%= link_to "Admin Login",new_user_session_path %></p>
+				<% end %></li>
+
+				<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145">
+					<% if user_signed_in?  %>
+						<div class="buttons">
+							<button class="button tiny success"><%= link_to "New Post", new_post_path  %></button>
+							<button class="button tiny alert"><%= link_to 'Sign out', destroy_user_session_path(:authenticity_token => form_authenticity_token()), method: 'delete' %></button>
+						</div>
+					<% end %>
+				</li>
+			</ul>
+		</div> 
+	</nav>
+</div>
+<!-- End main sidebar -->
+
+<div id="page" class="hfeed site">
+	<% if current_page?(posts_path)  %>
+		<h4 class="nav">All Posts</h4>
+	<% elsif current_page?(about_path) %>
+		<h4 class="nav">About</h4>
+	<% else  %>
+		<%= link_to "Back to All Posts", posts_path  %>
+	<% end %>
+	<div class="site-inner-wrapper">
+		<div id="masthead" class="site-header" role="banner">
+			<div class="site-branding">
+				<a href="http://www.jaycdave.com/posts"></a><img src="http://www.gravatar.com/avatar/d40369c0e5a2cf3363db686228504827.jpg" class="avatar site-logo"></a>	
+				<h1 class="site-title">
+					<a href="http://www.jaycdave.com/posts" rel="home">Jay's Blog</a>
+				</h1>
+					<h2 class="site-description">Things I find Interesting</h2>
+			</div>
+		</div><!-- #masthead -->
+		
+		<div id="content" class="site-content">
+
+
+			<div id="primary" class="content-area">
+				<main id="main" class="site-main" role="main">
+
+
+
+					<article id="post-141" class="post-141 post type-post status-publish format-standard has-post-thumbnail sticky hentry category-artwork category-astronomy tag-announcement tag-panache">
+						<header class="entry-header">
+							<div class="entry-categories"><% @posts.each do |post|  %></div>	
+
+							
+
+							<div class="entry-title"><%= link_to post.title, post %></div>				
+							<span class="posted-on">Posted on <time class="entry-date published" datetime="2011-09-20T01:25:16+00:00"><%= post.created_at.strftime("%B, %d, %Y")  %></time>
+						</header>
+						<div class="content-wrapper">
+							<div class="entry-content">
+								<p><%= post.body %></p>
+								<% end  %>
+							</div><!-- .entry-content -->
+							<div class="entry-meta clear">
+							</div><!-- .entry-meta -->
+						</div>
+					</article>
+					<nav class="navigation posts-navigation">
+						<!-- break up lines -->
+					</nav>
+
+				</main><!-- #main -->
+			</div><!-- #primary -->
+
+
+		</div><!-- #content -->
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			<div class="site-info">
+				<a href="http://www.jaycdave.com">"Take me to your home page"</a>.
+				<span class="sep"> ~ © Jay C. Davé </span>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- .site-inner-wrapper -->
+</div><!-- #page -->
+
+
+<!-- wpcom_wp_footer -->
+
+
+
+	<!-- 		<% @posts.each do |post|  %>
+						<div class="post_wrapper">
+							<p class="date"><%= post.created_at.strftime("%B, %d, %Y")  %></p>
+							<h3 class="title"><%= link_to post.title, post %></h3>
+							<h3 class="body"><%= post.body %></h3>
+
+						</div> 
+					<% end  %>
+
+ -->
+
+
+
+
+
+
+
+
+
+<!-- 
+
+	
 				<div id="header">
 					<% if current_page?(posts_path)  %>
-					<p>All Posts</p>
+						<p>All Posts</p>
 					<% elsif current_page?(about_path) %>
-					<p>About</p>
+						<p>About</p>
 					<% else  %>
-					<%= link_to "Back to All Posts", posts_path  %>
+						<%= link_to "Back to All Posts", posts_path  %>
 					<% end %>
 
 					<% if user_signed_in?  %>
-					<div class="buttons">
-						<button class="button tiny success"><%= link_to "New Post", new_post_path  %></button>
-						<button class="button tiny alert"><%= link_to 'Sign out', destroy_user_session_path(:authenticity_token => form_authenticity_token()), method: 'delete' %></button>
-					</div>
+						<div class="buttons">
+							<button class="button tiny success"><%= link_to "New Post", new_post_path  %></button>
+							<button class="button tiny alert"><%= link_to 'Sign out', destroy_user_session_path(:authenticity_token => form_authenticity_token()), method: 'delete' %></button>
+						</div>
 					<% end %>
 				</div>
 
 				<div class="all_posts">
 					<% @posts.each do |post|  %>
-					<div class="post_wrapper">
-						<p class="date"><%= post.created_at.strftime("%B, %d, %Y")  %></p>
-						<h3 class="title"><%= link_to post.title, post %></h3>
-						
-					</div> 
+						<div class="post_wrapper">
+							<p class="date"><%= post.created_at.strftime("%B, %d, %Y")  %></p>
+							<h3 class="title"><%= link_to post.title, post %></h3>
+						</div> 
 					<% end  %>
 				</div>
 
-			</div>
-		</main>
-	</div>
-</div>
-<%= render 'footer' %>
+			-->
 
 
 
