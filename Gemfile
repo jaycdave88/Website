@@ -14,6 +14,7 @@ gem 'mail_form'
 gem 'ruby'
 gem 'toastr-rails'
 gem 'devise'
+gem "paperclip", "~> 4.2"
 
 
 
