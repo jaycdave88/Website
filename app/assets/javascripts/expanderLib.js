@@ -1,6 +1,3 @@
-(function($) {
-    "use strict";
-
     function SimpleExpand() {
         var that = this;
         that.defaults = {
@@ -151,4 +148,3 @@
         instance.activate(this, options);
         return this
     }
-})(jQuery);
