@@ -1,4 +1,6 @@
-	<%= form_for @post do |f| %>
+<div class="row">
+  <div class="small-11 small-centered columns">
+  	<%= form_for @post do |f| %>
 	<% if @post.errors.any?  %>
 		<div id="errors">
 			<h2><%= pluralize(@post.errors.count, "error")  %> prevented this post from saving</h2>
@@ -23,3 +25,9 @@
 		<%= f.submit  %>
 	</p>
 	<% end %>
+  </div>
+</div>
+
+
+
+	
