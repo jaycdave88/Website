@@ -105,7 +105,10 @@
                                     <blockquote>
                                         <%= post.body%>
                                         <br>
-                                        <%= image_tag post.photo.url(:medium) %>
+                                        <% if post.photo.exists?  %>
+                                            <%= image_tag post.photo.url(:medium) %>
+                                        <% else %>
+                                        <% end %>
                                     </blockquote>
                                 </div>
                                 <!-- .entry-content -->
