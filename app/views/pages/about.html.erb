@@ -1,46 +1,138 @@
-<div class="page">
-		<span class="menu_toggle">
-		<i class="menu_open fa fa-align-justify fa-lg"></i>
-		<i class="menu_close fa fa-times fa-lg"></i>
-	</span>
-	<!-- open and close -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' id='all-css-0' href='https://s0.wp.com/_static/??-eJx9jksOgzAMRC/U1I0oy6pngWBSg/MRdhRxe6ouiioqdjPSe5qBmo1LUTEqhGIyF09RQAIxrnlJEzr9bVcncoH/GtOMAhNq7txsPu2A95z8LiTvcUhFzZiYU4VKg8fTDYojRdL1Gw6wvjC8b+TSg7ilqwyiK+Mp1ykyk+KOPsPD3htrm/Zm22kDA6FvnA==' type='text/css' media='all' />
+    <link rel='stylesheet' id='all-css-2' href='https://s2.wp.com/_static/??-eJx9kNEOwiAMRX9I7MzM9MX4Lcgq66SUAMt+X+YyjYny0pzSe5JSmIMy4jP6DDyp4CZLPoFFj5HK4A/uTUo7+O2mQWI20mOCkoLkqOAgs3oParaRiOWdg85LgrEnjQ65xGoah26zFhy0eVSXRJaR1rrGCLzk9Zsb1HyLopwYnUn8V6PuTlOsqRFvTmxB+7rPp12kK18Ox7Y5de25bcYn2kybUA==' type='text/css' media='all' />
+    <link rel='stylesheet' id='satellite-fonts-css' href='//fonts.googleapis.com/css?family=Lato%3A400%2C400italic%2C700%2C700italic%2C900%2C900italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+    <script type='text/javascript' src='https://s0.wp.com/_static/??-eJyFkGEKwjAMhS9k120o+Ec8y7ZmJbVtatNa9PRWmIg4FQIJycfjvcgSBPrJZgUsTa1zhnhdWmN4I38BwqGOQ4LGoX/CE/kEPj1YRyNaEJkhDrruqtBMK1wgTg6YK7RyfbeE/oJQ/mIGUhimk4jAePtQHS1pEWzW6FnWWYOinMRM1lKRBZWGtBaewyvn968t1NEdum3b7vZd3/bmDpPihs0='></script>
+</head>
 
-	<ul class="menu_items">
-		<li><a href="/"><i class="fa fa-home "></i> Home</a></li>
-		<li><a href="/posts"><i class="fa fa-book "></i> Blog</a></li>
-		<li><a href="/about"><i class="fa fa-info "></i> About</a></li>
-		<% if !user_signed_in? %>
-		<li><p class="sign_in"><%= link_to "Admin Login",new_user_session_path %></p></li>
-		<% end %>
-		<br>
-		<br>
-		<br>
+<body class="home blog mp6 customizer-styles-applied has-thumbnail highlander-enabled highlander-light infinite-scroll neverending">
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+    <div class="sidebar-nav">
+        <button class="menu-toggle x" title="Menu">
+            <span class="lines"></span>
+            <span class="screen-reader-text">Primary Menu</span>
+        </button>
+        <div class="social-links">
+            <ul id="menu-social-links" class="menu">
+                <li id="menu-item-151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-151"><a href="https://www.facebook.com/Gsxr600soup"><span class="screen-reader-text">Facebook</span></a></li>
+                <li id="menu-item-152" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152"><a href="https://twitter.com/J_cd88"><span class="screen-reader-text">Twitter</span></a></li>
+                <li id="menu-item-154" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-154"><a href="https://github.com/jaycdave88"><span class="screen-reader-text">Github</span></a></li>
+                <li id="menu-item-155" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-155"><a href="https://www.linkedin.com/in/jaycdave"><span class="screen-reader-text">LinkedIn</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="slide-menu">
+        <a href="http://www.jaycdave.com/"><img src="http://www.gravatar.com/avatar/d40369c0e5a2cf3363db686228504827.jpg"class="avatar site-logo"></a>
+        <h1 class="site-title">
+    <a href="http://www.jaycdave.com/posts" rel="home">Jay's Blog</a>
+  </h1>
+        <nav id="site-navigation" class="main-navigation" role="navigation">
+            <div class="menu-primary-container">
+                <ul id="menu-primary" class="menu">
+                    <li id="menu-item-142" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-142"><a href="/"><i class="fa fa-home fa-2x"></i> Home</a></li>
 
-	</ul>
-	<!-- side links -->
-	<main class="content">
-		<div class="content_inner">
-			<%= link_to "Back to All Posts", posts_path, :class => "button disabled tiny radius "  %>
-			<div id="page_wrapper">
-				<div id="profile_image">
-					<%= image_tag "profile.png" %>
-				</div>
+                    <li id="menu-item-143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-143"><a href="/posts"><i class="fa fa-book fa-2x"></i> Blog</a></li>
 
-				<div id="content">
-					<h2>Hi Everyone! </h2>
-					<p>Welcome to my blog posts of technologies and things I just find interesting.</p>
-					<br>
-					<b><p>Feel free to follow me on social media!</p></b>
-				</div>
-			</div>
-		</div>
-	</main>
-</div>
-<%= render 'posts/footer' %>
+                    <li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144"><a href="/about"><i class="fa fa-info fa-2x"></i> About</a></li>
 
+                    <li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-145">
+                        <% if !user_signed_in? %>
+                            <a href="/users/sign_in"><i class="fa fa-lock fa-2x"></i> Admin Login</a>
+                        <% end %>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- #site-navigation -->
+        <div id="secondary" class="widget-area" role="complementary">
+            <aside id="text-2" class="widget widget_text">
+                <h1 class="widget-title"></h1>
+                <div class="textwidget">
+                    <% if user_signed_in?  %>
+                        <div class="buttons">
+                            <button class="button tiny success"><%= link_to "New Post", new_post_path  %></button>
+                            <button class="button tiny alert"><%= link_to 'Sign out', destroy_user_session_path(:authenticity_token => form_authenticity_token()), method: 'delete' %></button>
+                        </div>
+                    <% end %>
+                    <h4>"Don't limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve."</h4>
+                    <h6> - Mary Kay Ash</h6>
+                </div>
+            </aside>
+        </div>
+        <!-- #secondary -->
+    </div>
+    <!-- .slide-menu -->
+    <div id="page" class="hfeed site" style="background-color: lightgray;">
+        <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+        <div class="site-inner-wrapper">
+            <header id="masthead" class="site-header" role="banner">
 
+                <div class="site-branding">
+                    <a href="http://www.jaycdave.com/posts"></a>
 
+                    <h1 class="site-title">
+          <a style="cursor:default;" rel="home">About Me</a>
+        </h1>
+                    <h2 class="site-description"></h2>
+                </div>
+            </header>
+            <!-- #masthead -->
+            
+            <div id="content" class="site-content">
+                <div id="primary" class="content-area">
+                    <main id="main" class="site-main" role="main">
 
+                        <article id="post-242" class="post-242 post type-post status-publish format-quote has-post-thumbnail hentry category-books post_format-post-format-quote">
+                            <header class="entry-header">
+                                <div class="entry-categories">
+                                <% if current_page?(posts_path)  %>
+                                    All Posts
+                                <% elsif current_page?(about_path) %>
+                                    About
+                                    <br>
+                                    <%= link_to "Back to All Posts", posts_path  %>
+                                <% else  %>
+                                    <%= link_to "Back to All Posts", posts_path  %>
+                                <% end %>
+                                </div>
+                                
+                                <h1 class="entry-title"> Hi Everyone!</h1> <span class="entry-meta"><span class="posted-on"><time class="entry-date published"></time><time class="updated" datetime="2015-03-17T14:44:50+00:00">March 17, 2015</time></a></span><span class="byline"> by <span class="author vcard"></span></span>
+                                </span>
+                            </header>
+                            <!-- .entry-header -->
+                            <div class="content-wrapper">
+                                <div class="entry-content">
+                                    <blockquote>
+                                    	<%= image_tag "profile.png" %>
+                                    	<h4>Welcome to my blog posts of technologies and things I just find interesting.</h4>
+                                    	<br>
+                                    	<h7>Feel free to follow me on social media!</h7> 
 
+                                    </blockquote>
+                                </div>
+                                <!-- .entry-content -->
+                                <div class="entry-meta clear">
+                                    <span class="entry-format"><a style="cursor:default" title="Thoughts"><span class="screen-reader-text">Quote</span></a>
+                                    </span>
+                                </div>
+                                <!-- .entry-meta -->
+                            </div>
+                        </article>
 
+                     
+                    </main>
 
+                </div>
+
+            </div>
+            <footer id="colophon" class="site-footer" role="contentinfo">
+
+            </footer>
+
+        </div>
+    </div>
+
+    <link rel='stylesheet' id='all-css-2' href='https://s2.wp.com/wp-content/mu-plugins/tiled-gallery/tiled-gallery.css?m=1401143454g' type='text/css' media='all' />
+    <script type='text/javascript' src='https://s0.wp.com/_static/??-eJyNkdFugzAMRX9oIUNdH6d9S2pMcTBJhh0Yf78MCdRWFetT7Jt7bizHzslADIpBrRfb4ESA6afy8mZvroZsEucrBbEUWgqky148erXDAcWmfLECo5v5L1h6SoYp9KaNkMW0dPSGdHFUiE2JKaz/zjguFSzA+DIkTKXq4mx2/YDFIXqyOt+d//o9anLQm9fcT123y3KKzKS4jr81B7HgxpgFeZ9jEw4YJcbGXB1zWel9d0CNKCkGoQnNVNYanyjVQGFLoACct3+Y23jxCPoYv2WvuHUiqCuw9qnkSyG+hs/641TXp/N7ffa/iLYCuA=='></script>
