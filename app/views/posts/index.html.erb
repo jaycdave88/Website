@@ -104,6 +104,11 @@
                                 <div class="entry-content">
                                     <blockquote>
                                         <%= post.body%>
+                                        <br>
+                                        <% if post.photo.exists?  %>
+                                            <%= image_tag post.photo.url(:medium) %>
+                                        <% else %>
+                                        <% end %>
                                     </blockquote>
                                 </div>
                                 <!-- .entry-content -->

@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
-	 skip_before_action :verify_authenticity_token
+	skip_before_action :verify_authenticity_token
 	before_action :authenticate_user!, except: [:index, :show]
+
 	def index
 		@posts = Post.all.order('created_at DESC')
 	end
@@ -46,7 +47,7 @@ class PostsController < ApplicationController
 	private
 
 	def post_params
-		params.require(:post).permit(:title, :body)
+		params.require(:post).permit(:title, :body, :photo)
 	end
 
 
