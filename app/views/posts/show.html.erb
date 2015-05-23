@@ -110,7 +110,7 @@
                             <div class="content-wrapper">
                                 <div class="entry-content">
                                     <blockquote>
-                                    	<%= @post.body  %>
+                                    	<h5><%= @post.body %></h5>
                                         <br>
                                             <%= image_tag @post.photo.url(:medium) %>
                                     	<div id="comments">
@@ -119,6 +119,9 @@
 										<h3>Add a comment:</h3>
 										<%= render "comments/form"  %>
 									</div>
+                                    <br>
+                                    <h7>Repost / Share: </h7>
+                                    <%= social_share_button_tag( @post.title, :url=> "http://www.jaycdave.com/posts/"+@post.id.to_s ) %>
                                     </blockquote>
                                 </div>
                                 <!-- .entry-content -->
