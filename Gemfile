@@ -13,6 +13,7 @@ gem 'ruby'
 gem 'toastr-rails'
 gem 'devise'
 gem "paperclip", "~> 4.2"
+gem 'social-share-button', '~> 0.1.6'
 
 
 #-------------css---------------

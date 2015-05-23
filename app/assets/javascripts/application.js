@@ -15,6 +15,7 @@
 //= require foundation
 //= require jquery_ujs
 //= require toastr
+//= require social-share-button
 //= require_tree .
 
 

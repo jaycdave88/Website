@@ -103,12 +103,14 @@
                             <div class="content-wrapper">
                                 <div class="entry-content">
                                     <blockquote>
-                                        <%= post.body%>
+                                        <h5><%= post.body%></h5>
                                         <br>
                                         <% if post.photo.exists?  %>
                                             <%= image_tag post.photo.url(:medium) %>
                                         <% else %>
                                         <% end %>
+                                        <h7>Repost / Share: </h7>
+                                        <%= social_share_button_tag("http://www.jaycdave.com/posts") %>
                                     </blockquote>
                                 </div>
                                 <!-- .entry-content -->
