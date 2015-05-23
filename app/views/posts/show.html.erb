@@ -119,8 +119,9 @@
 										<h3>Add a comment:</h3>
 										<%= render "comments/form"  %>
 									</div>
+                                    <br>
                                     <h7>Repost / Share </h7>
-                                     <%= social_share_button_tag("http://www.jaycdave.com/posts") %>
+                                     <%= social_share_button_tag(@post.title) %>
                                     </blockquote>
                                 </div>
                                 <!-- .entry-content -->
