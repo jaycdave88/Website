@@ -120,8 +120,8 @@
 										<%= render "comments/form"  %>
 									</div>
                                     <br>
-                                    <h7>Repost / Share </h7>
-                                     <%= social_share_button_tag(@post.title) %>
+                                    <h7>Repost / Share: </h7>
+                                    <%= social_share_button_tag( @post.title, :url=> "http://www.jaycdave.com/posts/"+@post.id.to_s ) %>
                                     </blockquote>
                                 </div>
                                 <!-- .entry-content -->
