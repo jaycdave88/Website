@@ -16,4 +16,4 @@
 /tmp
 /node_modules/*
 /public/system/posts/photos/*
-.env
+.ENV
