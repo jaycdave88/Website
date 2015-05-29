@@ -15,7 +15,6 @@ end
     resources :comments
   end
   
-  resources :games, only: [:index]
 
   get '/about', to: 'pages#about'
   
