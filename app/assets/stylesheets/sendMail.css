@@ -24,4 +24,7 @@
   position:relative;
   top:1px;
 }
+#contactForm > input.btn.submit_contactMe{
+  margin-top: 6px;
+}
 
