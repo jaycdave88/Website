@@ -8,6 +8,7 @@
 }
 #linkedin > a{
   margin: 0 auto; 
+  color: white;
 }
 #linkedin:hover{
   background-color: #0e76a8;
@@ -28,6 +29,7 @@
 }
 #github > a{
   margin: 0 auto; 
+  color: white;
 }
 #github:hover{
   background-color: #939393;
@@ -47,6 +49,7 @@
 }
 #twitter > a{
   margin: 0 auto; 
+  color: white;
 }
 #twitter:hover{
   background-color: #4099FF;
@@ -66,10 +69,30 @@
 }
 #facebook > a{
   margin: 0 auto; 
+  color: white;
 }
 #facebook:hover{
   background-color: #3b5998;
   border: #fff 2px solid;
+  -webkit-transition: background 0.5s ease-in-out;
+  -moz-transition: background 0.5s ease-in-out;
+  -o-transition: background 0.5s ease-in-out;
+  -transition: background 0.5s ease-in-out;
+}
+
+#stackoverflow{
+  display: inline-block;
+  border: 2px solid white;
+  padding: 8px;
+}
+#stackoverflow > a{
+  margin: 0 auto; 
+   color: white;
+}
+#stackoverflow:hover{
+  background-color: #FFA500;
+  border: #fff 2px solid;
+
   -webkit-transition: background 0.5s ease-in-out;
   -moz-transition: background 0.5s ease-in-out;
   -o-transition: background 0.5s ease-in-out;
