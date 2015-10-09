@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="Personal Portfolio">
@@ -18,14 +19,20 @@
 	<%= favicon_link_tag 'favicon.ico' %>
 </head>
 
+
 <body>
 
-	<%= yield %>
-	<a href="#top" id="top" class="scrollToTop"></a>
-	<%= javascript_include_tag "application" %>
 
+<div class="far_background">
+	<div class="row">
+	  <div class="large-11 large-centered columns">
+	  	<%= yield %>
+	  	<a href="#top" id="top" class="scrollToTop"></a>
+			<%= javascript_include_tag "application" %>
+		 </div>
+	</div>
+</div>
 	
-
 </body>
 </html>
 

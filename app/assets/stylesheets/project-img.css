@@ -11,9 +11,9 @@
 }
 
 .project-img:hover{
-	 -webkit-transform:scale(1.15); /* Safari and Chrome */
-    -moz-transform:scale(1.15); /* Firefox */
-    -ms-transform:scale(1.15); /* IE 9 */
-    -o-transform:scale(1.15); /* Opera */
-     transform:scale(1.15);
+	 -webkit-transform:scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* IE 9 */
+    -o-transform:scale(1.05); /* Opera */
+     transform:scale(1.05);
 	}
