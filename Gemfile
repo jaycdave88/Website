@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'bundler'
 gem 'rails', '4.1.5'
@@ -14,7 +14,6 @@ gem 'toastr-rails'
 gem 'devise'
 gem "paperclip", "~> 4.2"
 gem 'social-share-button', '~> 0.1.6'
-
 
 #-------------css---------------
 gem 'foundation-rails', '5.4.3.1'

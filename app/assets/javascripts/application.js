@@ -19,6 +19,7 @@
 //= require_tree .
 
 
-$(document).foundation();
+$(document).ready(function(){
+});
 
 
