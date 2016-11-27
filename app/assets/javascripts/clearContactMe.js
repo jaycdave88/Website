@@ -14,7 +14,6 @@ submitBtn.click(function(){
 			$("#email").val('');
 			$("#subject").val('');
 			$("#message").val('');
-			
 		}
 	})
 });
