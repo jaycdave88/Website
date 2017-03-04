@@ -8,7 +8,7 @@
 }
 #linkedin > a{
   margin: 0 auto; 
-  color: white;
+  color: black;
 }
 #linkedin:hover{
   background-color: #0e76a8;
@@ -29,7 +29,7 @@
 }
 #github > a{
   margin: 0 auto; 
-  color: white;
+  color: black;
 }
 #github:hover{
   background-color: #939393;
@@ -49,7 +49,7 @@
 }
 #twitter > a{
   margin: 0 auto; 
-  color: white;
+  color: black;
 }
 #twitter:hover{
   background-color: #4099FF;
@@ -69,7 +69,7 @@
 }
 #facebook > a{
   margin: 0 auto; 
-  color: white;
+  color: black;
 }
 #facebook:hover{
   background-color: #3b5998;
@@ -87,7 +87,7 @@
 }
 #stackoverflow > a{
   margin: 0 auto; 
-   color: white;
+   color: black;
 }
 #stackoverflow:hover{
   background-color: #FFA500;

@@ -1,31 +1,29 @@
-// $(function() {
-//   // Initialize form validation on the registration form.
-//   // It has the name attribute "registration"
-//   $("#contactForm").validate({
-//     // Specify validation rules
-//     rules: {
-//       // The key name on the left side is the name attribute
-//       // of an input field. Validation rules are defined
-//       // on the right side
-//       name: "required",
-//       subject: "required",
-//       email: {
-//         required: true,
-//         // Specify that email should be validated
-//         // by the built-in "email" rule
-//         email: true
-//       }
-//     },
-//     // Specify validation error messages
-//     messages: {
-//       name: "Please enter your name",
-//       subject: "Please enter a subject",
-//       email: "Please enter a valid email address"
-//     },
-//     // Make sure the form is submitted to the destination defined
-//     // in the "action" attribute of the form when valid
-//     submitHandler: function(form) {
-//       form.submit();
-//     }
-//   });
-// });
+$(function() {
+  // Initialize form validation on the registration form.
+  // It has the name attribute "registration"
+  $("#contactForm").validate({
+    // Specify validation rules
+    rules: {
+      name:{
+        required: true,
+        minlength: 5
+      },
+      email:{
+        required: true,
+        email: true
+      },
+      subject:{
+        required: true,
+        minlength: 5
+      }
+    },
+    // Specify validation error messages
+
+    // Make sure the form is submitted to the destination defined
+    // in the "action" attribute of the form when valid
+    submitHandler: function(form) {
+      form.submit();
+      alert("Email sent!");
+    }
+  });
+});

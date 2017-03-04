@@ -1,35 +1,34 @@
-<div class="whiteBG">
+
 	<div class="row">
-		<div class="large-6 columns"> </div>
-		<div id="headers">
-			<h2 class='headers'>
-				<span class="line_center">
-					<a name="contact_me" style="cursor:default">
-						Contact Me
-					</a>
-				</span>
-			</h2>
+		<div class="contact">
+			<div class="large-6 columns"> </div>
+			<div id="headers">
+				<h2 class='headers'>
+					<span class="line_centerBlk">
+						<a name="contact_me" style="cursor:default; color:white">
+							Contact Me
+						</a>
+					</span>
+				</h2>
 
-			<form role="form" action='/api/v1/contact'  method='post' id="contactForm" data-remote=true>
+				<form role="form" action='/api/v1/contact'  method='post' id="contactForm" data-remote=true>
 
-				<input type="text" placeHolder="Enter Name (Required)" name="name" id="name">
-
-
-				<input type="email" placeHolder="Enter Email (Required)" name="email" id="email">
+					<input required type="text" placeHolder="Jane Smith" name="name" id="name">
 
 
-				<input type="text" placeHolder="Subject (Required)" name="subject" id="subject">
+					<input required type="email" placeHolder="jane@smith.com" name="email" id="email">
 
 
-				<textarea name='message' placeholder='Type your message here (Required)' id="message"></textarea>
+					<input required type="text" placeHolder="Hey Jay!" name="subject" id="subject">
 
 
-				<input class="btn submit_contactMe" type="button" value="Send Message">
-			</form>
+					<textarea required name='message' placeholder='Type your message here' id="message"></textarea>
 
 
+					<input class="btn submit_contactMe" type="button" value="Send Message">
+				</form>
+
+
+			</div>
 		</div>
 	</div>
-
-	<br>
-</div>
