@@ -5,6 +5,8 @@ if (typeof Object.create !== "function") {
         F.prototype = obj;
         return new F();
     };
+
+    
 }
 (function ($, window, document) {
 
