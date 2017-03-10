@@ -7,9 +7,7 @@ ActionMailer::Base.smtp_settings = {
   :port                 => 587,
   :enable_starttls_auto => true,
   :domain             => 'website-jaycdave.herokuapp.com',
-  :user_name            => 'jaycdave@gmail.com',
-  :password             => 'Zumiez6431$!',
+  :user_name            => ENV['GMAIL_USERNAME'],
+  :password             => ENV['GMAIL_PASSWORD'],
   :authentication       => "plain"
 }
-
-#ActionMailer::Base.default_url_options = { :host => 'localhost', :port => 3000 }
