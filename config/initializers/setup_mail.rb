@@ -9,5 +9,5 @@ ActionMailer::Base.smtp_settings = {
   :domain             => 'website-jaycdave.herokuapp.com',
   :user_name            => ENV['GMAIL_USERNAME'],
   :password             => ENV['GMAIL_PASSWORD'],
-  :authentication       => "plain"
+  :authentication       => "login"
 }
