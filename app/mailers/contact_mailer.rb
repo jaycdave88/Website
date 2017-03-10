@@ -4,7 +4,7 @@ class ContactMailer < ActionMailer::Base
     @email = params[:email]
     @subject = params[:subject]
     @message = params[:message]
-    mail to: 'jaycdave@gmail.com', from: 'letsmakelife2happy@gmail.com',
+    mail to: 'developerjaycdave@gmail.com', from: 'letsmakelife2happy@gmail.com',
         subject: '1 New Mail Received'
   end
 end
