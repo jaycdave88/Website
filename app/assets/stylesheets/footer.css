@@ -30,7 +30,7 @@ footer {
     background-size: 50px 50px;
     -moz-box-shadow: 1px 1px 8px gray;
     -webkit-box-shadow: 1px 1px 8px gray;
-    box-shadow: 1px 1px 8px gray;
+    box-shadow: none;
     height: 20px;
 }
 .splitterSkill{
