@@ -6,6 +6,8 @@ Rails.application.configure do
 
   config.assets.precompile += %w( vendor/modernizr.js )
 
+  config.log_level = :debug
+
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
