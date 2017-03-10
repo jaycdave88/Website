@@ -13,6 +13,7 @@
 #linkedin:hover{
   background-color: #0e76a8;
   border: #fff 2px solid;
+  border-radius: 25px;
   -webkit-transition: background 0.5s ease-out;
   -moz-transition: background 0.5s ease-out;
   -o-transition: background 0.5s ease-out;
@@ -34,6 +35,7 @@
 #github:hover{
   background-color: #939393;
   border: #fff 2px solid;
+  border-radius: 25px;
   -webkit-transition: background 0.5s ease-out;
   -moz-transition: background 0.5s ease-out;
   -o-transition: background 0.5s ease-out;
@@ -54,6 +56,7 @@
 #twitter:hover{
   background-color: #4099FF;
   border: #fff 2px solid;
+  border-radius: 25px;
   -webkit-transition: background 0.5s ease-out;
   -moz-transition: background 0.5s ease-out;
   -o-transition: background 0.5s ease-out;
@@ -74,6 +77,7 @@
 #facebook:hover{
   background-color: #3b5998;
   border: #fff 2px solid;
+  border-radius: 25px;
   -webkit-transition: background 0.5s ease-in-out;
   -moz-transition: background 0.5s ease-in-out;
   -o-transition: background 0.5s ease-in-out;
@@ -92,7 +96,7 @@
 #stackoverflow:hover{
   background-color: #FFA500;
   border: #fff 2px solid;
-
+  border-radius: 25px;
   -webkit-transition: background 0.5s ease-in-out;
   -moz-transition: background 0.5s ease-in-out;
   -o-transition: background 0.5s ease-in-out;
