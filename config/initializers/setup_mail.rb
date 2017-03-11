@@ -5,10 +5,10 @@ ActionMailer::Base.smtp_settings = {
   :address              => "smtp.gmail.com",
   :port                 => 587,
   :enable_starttls_auto => true,
-  #:domain             => 'gmail.com',
+  :domain             => 'heroku.com',
   :user_name            => ENV['GMAIL_USERNAME'],
   :password             => ENV['GMAIL_PASSWORD'],
-  :authentication       => "login"
+  :authentication       => :plain
 }
 
 ActionMailer::Base.default_url_options = { :host => 'www.website-jaycdave.herokuapp.com' }  
