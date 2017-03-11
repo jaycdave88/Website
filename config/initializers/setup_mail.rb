@@ -11,4 +11,4 @@ ActionMailer::Base.smtp_settings = {
   :authentication       => :plain
 }
 
-ActionMailer::Base.default_url_options = { :host => 'http://www.jaycdave.com/' }  
+ActionMailer::Base.default_url_options = { :host => 'https://website-jaycdave.herokuapp.com/' }  

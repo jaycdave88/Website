@@ -88,21 +88,20 @@ config.i18n.fallbacks = true
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.smtp_settings = {
-    :address              => "smtp.sendgrid.net",
+  config.active_record.delivery_method = :smtp
+  config.active_record.perform_deliveries = true
+  config.active_record.raise_delivery_errors = true
+  config.active_record.smtp_settings = {
+    :address              => "smtp.gmail.com",
     :port                 => 587,
     :enable_starttls_auto => true,
-    :domain             => 'heroku.com',
-    :user_name            => ENV['SENDGRID_USERNAME'],
-    :password             => ENV['SENDGRID_PASSWORD'],
+    :domain             => 'gmai.com',
+    :user_name            => ENV['GMAIL_USERNAME'],
+    :password             => ENV['GMAIL_PASSWORD'],
     :authentication       => :plain
   }
 
-  config.action_mailer.default_url_options = { :host => 'https://website-jaycdave.herokuapp.com/' }  
-
+  config.active_record.default_url_options = { :host => 'https://website-jaycdave.herokuapp.com/' }  
 
 
 
