@@ -85,6 +85,9 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
+  config.action_mailer.default_url_options = { :host => 'website-jaycdave.herokuapp.com' }
+
+
   config.paperclip_defaults = {
   :storage => :s3,
   :s3_credentials => {
@@ -92,19 +95,5 @@ Rails.application.configure do
     :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
     :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
   }
-}
-
-config.default_url_options = { :host => 'website-jaycdave.herokuapp.com' }  
-config.delivery_method = :smtp
-config.perform_deliveries = true
-config.raise_delivery_errors = true
-config.smtp_settings = {
-  :address              => "smtp.gmail.com",
-  :port                 => 587,
-  :enable_starttls_auto => true,
-  :domain             => 'gmail.com',
-  :user_name            => ENV['GMAIL_USERNAME'],
-  :password             => ENV['GMAIL_PASSWORD'],
-  :authentication       => "plain"
 }
 end
