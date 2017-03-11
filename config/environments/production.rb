@@ -4,14 +4,6 @@ Rails.application.configure do
   # Code is not reloaded between requests.
   config.cache_classes = true
 
-  config.assets.precompile += %w( vendor/modernizr.js )
-
-  config.log_level = :debug
-
-  config.logger = Logger.new(STDOUT)
-  config.logger.level = Logger::DEBUG
-
-
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
   # and those relying on copy on write to perform better.
@@ -74,7 +66,7 @@ Rails.application.configure do
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
-config.i18n.fallbacks = true
+  config.i18n.fallbacks = true
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
@@ -87,30 +79,4 @@ config.i18n.fallbacks = true
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-
-  config.active_record.delivery_method = :smtp
-  config.active_record.perform_deliveries = true
-  config.active_record.raise_delivery_errors = true
-  config.active_record.smtp_settings = {
-    :address              => "smtp.gmail.com",
-    :port                 => 587,
-    :enable_starttls_auto => true,
-    :domain             => 'gmai.com',
-    :user_name            => ENV['GMAIL_USERNAME'],
-    :password             => ENV['GMAIL_PASSWORD'],
-    :authentication       => :plain
-  }
-
-  config.active_record.default_url_options = { :host => 'https://website-jaycdave.herokuapp.com/' }  
-
-
-
-  config.paperclip_defaults = {
-    :storage => :s3,
-    :s3_credentials => {
-      :bucket => ENV['S3_BUCKET_NAME'],
-      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
-      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
-    }
-  }
 end
