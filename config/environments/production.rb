@@ -8,6 +8,9 @@ Rails.application.configure do
 
   config.log_level = :debug
 
+  config.logger = Logger.new(STDOUT)
+  config.logger.level = Logger::DEBUG
+
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
