@@ -1,0 +1,58 @@
+I"’(function() {
+  var slice = [].slice;
+
+  this.ActionCable = {
+    INTERNAL: {
+      "message_types": {
+        "welcome": "welcome",
+        "ping": "ping",
+        "confirmation": "confirm_subscription",
+        "rejection": "reject_subscription"
+      },
+      "default_mount_path": "/cable",
+      "protocols": ["actioncable-v1-json", "actioncable-unsupported"]
+    },
+    WebSocket: window.WebSocket,
+    logger: window.console,
+    createConsumer: function(url) {
+      var ref;
+      if (url == null) {
+        url = (ref = this.getConfig("url")) != null ? ref : this.INTERNAL.default_mount_path;
+      }
+      return new ActionCable.Consumer(this.createWebSocketURL(url));
+    },
+    getConfig: function(name) {
+      var element;
+      element = document.head.querySelector("meta[name='action-cable-" + name + "']");
+      return element != null ? element.getAttribute("content") : void 0;
+    },
+    createWebSocketURL: function(url) {
+      var a;
+      if (url && !/^wss?:/i.test(url)) {
+        a = document.createElement("a");
+        a.href = url;
+        a.href = a.href;
+        a.protocol = a.protocol.replace("http", "ws");
+        return a.href;
+      } else {
+        return url;
+      }
+    },
+    startDebugging: function() {
+      return this.debugging = true;
+    },
+    stopDebugging: function() {
+      return this.debugging = null;
+    },
+    log: function() {
+      var messages, ref;
+      messages = 1 <= arguments.length ? slice.call(arguments, 0) : [];
+      if (this.debugging) {
+        messages.push(Date.now());
+        return (ref = this.logger).log.apply(ref, ["[ActionCable]"].concat(slice.call(messages)));
+      }
+    }
+  };
+
+}).call(this);
+:ET

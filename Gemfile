@@ -29,5 +29,8 @@ group :production do
 end
 
 group :assets do
-  gem 'coffee-rails'
+    gem 'sass-rails'
+    gem 'coffee-rails'
+    gem 'uglifier'
+    gem 'bootstrap-sass'
 end
