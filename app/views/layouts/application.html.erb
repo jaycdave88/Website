@@ -1,37 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="Personal Portfolio">
-	<meta name="keywords" content="Objective-C,Swift,iOS,Programming,Jay Dave,Dave,Jay,Hire,Developer,HTML,CSS,JavaScript">
-	<meta name="author" content="Jay Dave">
+  <meta charset="utf-8">
+  <title>JD - Personal Business Card</title>
+  <%= csrf_meta_tags %>
+  <meta name="description" content="Jay C Dave - Personal Business Card">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 
-	<meta name="keywords" content=",Developer,Blog,">
-	<title><%= content_for?(:title) ? yield(:title) : "Jay C Davé" %></title>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script language="javascript" type="text/javascript" src="http://code.createjs.com/createjs-2013.12.12.min.js" ></script>
-
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-	<%= stylesheet_link_tag "application" %>
-	<%= favicon_link_tag 'favicon.ico' %>
+  <%= stylesheet_link_tag    'application' %>
+  <%= javascript_include_tag 'application' %>
 </head>
-<body>
 
-	<div class="far_background">
-		<div class="row">
-			<div class="large-11 large-centered columns">
-				<%= yield %>
-				<a href="#top" id="top" class="scrollToTop"></a>
-				<%= javascript_include_tag "application" %>
-			</div>
-		</div>
-	</div>
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js" type="text/javascript"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/additional-methods.min.js" type="text/javascript"></script>
+<body>
+  <%= yield %>
 </body>
 </html>
-

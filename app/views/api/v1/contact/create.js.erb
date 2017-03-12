@@ -1,9 +1,0 @@
-
-
-$("#toastr-message").html("<%= @flash['message'] %>")
-
-<% if @flash['success'] %>
-toastr["error"]("Something went wrong! Please try again!")
-<% else %>
-toastr["success"]("Thank you for contacting me! I will get back to you as soon as possible!")
-<% end %>
