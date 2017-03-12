@@ -53,7 +53,7 @@ function hashHistory(){
 		$("."+$(".lx-main-menu ul li a[data-url='"+page+"']").attr("data-title")).fadeIn();		
 	}
 	else{
-		$('html, body').animate({scrollTop : $("."+$(".lx-main-menu ul li a[data-url='"+page+"']").attr("data-title")).offset().top-50},1000);
+		// $('html, body').animate({scrollTop : $("."+$(".lx-main-menu ul li a[data-url='"+page+"']").attr("data-title")).offset().top-50},1000);
 		$(".lx-main-menu ul").slideUp();
 	}
 	

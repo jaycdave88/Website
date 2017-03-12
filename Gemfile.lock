@@ -59,7 +59,7 @@ GIT
       thor (>= 0.18.1, < 2.0)
 
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     arel (8.0.0)
     autoprefixer-rails (6.7.7)
