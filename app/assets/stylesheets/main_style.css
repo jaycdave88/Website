@@ -237,6 +237,20 @@ Here is the content of this css file
 	}
 }
 
+@media(min-device-width : 414px){
+	.lx-intro{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@media(max-device-width : 736px) {
+	.lx-intro{
+		width: 100%;
+		height: 100%;
+	}
+}
+
 @media(max-width:768px){
 	.lx-intro-warp{
 		width:90%;
