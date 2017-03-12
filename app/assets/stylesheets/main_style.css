@@ -187,11 +187,10 @@ Here is the content of this css file
 	width:30px;
 }
 .lx-menu-btn{
-	float: right;
-	font-size: 30px;
-	color:#FFFFFF;
-	line-height: 18px;
-
+	float: right !important;
+	font-size: 30px !important;
+	color:#FFFFFF !important;
+	line-height: 18px !important;
 }
 
 /* menu responsive*/
@@ -224,7 +223,6 @@ Here is the content of this css file
 	background-position: center;
 	background-size: cover;
 	background-attachment: center;
-	width: 100%;
 }
 .lx-intro-warp{
 	width:970px;

@@ -118,7 +118,7 @@ $(".lx-main-menu ul li ").on("click", function() {
     }, 1000);
     if ($(window).width() < 769) {
         menu.css("left", "-40px");
-        $(".lx-main-menu > i").attr("class", "fa fa-bars");
+        $(".lx-main-menu > i").attr("class", "lnr lnr-menu lx-menu-btn");
     }
     return false;
 });
