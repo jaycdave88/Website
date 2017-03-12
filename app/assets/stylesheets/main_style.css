@@ -224,6 +224,7 @@ Here is the content of this css file
 	background-position: center;
 	background-size: cover;
 	background-attachment: center;
+	width: 100%;
 }
 .lx-intro-warp{
 	width:970px;
