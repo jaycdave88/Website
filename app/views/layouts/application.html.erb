@@ -16,33 +16,35 @@
 </head>
 
 <body>
-			<div id="lx-header">
-			<div class="container lx-header-warp">
-				<div class="row">
-				<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 ">
+ <div id="lx-header">
+   <div class="container lx-header-warp">
+    <div class="row">
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 ">
 
-					<!-- Logo -->
-					<div class="lx-logo">
-						<%=image_tag("logo.png")%>
-					</div>
-					<!-- /Logo -->
+       <!-- Logo -->
+       <div class="lx-logo">
+        <%=image_tag("logo.png")%>
+      </div>
+      <!-- /Logo -->
 
-					<!-- menu -->
-					<div class="lx-main-menu">
-						<i class="lnr lnr-menu lx-menu-btn"></i>
-						<ul>
-							<li class="lx-menu-item active" data-url="home" ><a href="#home" title="home">home <span></span></a></li>
-							<li class="lx-menu-item" data-url="about"><a href="#about" title="about">about <span></span></a></li>
-							<li class="lx-menu-item" data-url="skills"><a href="#skills" title="skills">skills <span></span></a></li>
-							<li class="lx-menu-item" data-url="contact"><a href="#contact" title="contact">contact <span></span></a></li>
-						</ul>
-					</div>
-					<!-- /Menu -->
-				</div>
-			</div>
-			</div>
-		</div>
-  <%= yield %>
-  <%= javascript_include_tag 'application' %>
+      <!-- menu -->
+      <div class="lx-main-menu">
+        <i class="lnr lnr-menu lx-menu-btn"></i>
+        <ul>
+         <li class="lx-menu-item active" data-url="home" ><a href="#home" title="home">home <span></span></a></li>
+         <li class="lx-menu-item" data-url="about"><a href="#about" title="about">about <span></span></a></li>
+         <li class="lx-menu-item" data-url="skills"><a href="#skills" title="skills">skills <span></span></a></li>
+         <li class="lx-menu-item" data-url="contact"><a href="#contact" title="contact">contact <span></span></a></li>
+       </ul>
+     </div>
+     <!-- /Menu -->
+   </div>
+ </div>
+</div>
+</div>
+<%= yield %>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js" type="text/javascript"></script>
+<%= javascript_include_tag 'application' %>
 </body>
 </html>

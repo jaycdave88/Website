@@ -884,3 +884,10 @@ a.btn-2{
 	margin-top:5px;
 	color:#FFFFFF;
 }
+
+.error{
+	color: #a94442;
+}
+input.error{
+	border-right: 3px solid #a94442;
+}
