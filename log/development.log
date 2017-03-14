@@ -29248,3 +29248,18 @@ bin/spring:15:in `<top (required)>'
 bin/rails:3:in `load'
 bin/rails:3:in `<main>'
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/devmode/Desktop/CODE/website/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/devmode/Desktop/CODE/website/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/devmode/Desktop/CODE/website/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for ::1 at 2017-03-13 22:15:24 -0500
+Processing by IndexController#root as HTML
+  Rendering index/root.html.erb within layouts/application
+  Rendered partials/_hero.html.erb (0.5ms) [cache miss]
+  Rendered partials/_about.html.erb (465.6ms) [cache miss]
+  Rendered partials/_skills.html.erb (0.7ms) [cache miss]
+  Rendered partials/_contact.html.erb (0.4ms) [cache miss]
+  Rendered partials/_footer.html.erb (1.9ms) [cache miss]
+  Rendered index/root.html.erb within layouts/application (478.2ms)
+Completed 200 OK in 751ms (Views: 554.6ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/devmode/Desktop/CODE/website/config/initializers/new_framework_defaults.rb:21)
